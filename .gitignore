@@ -2,3 +2,7 @@
 notebooks/data/
 notebooks/plots/
 notebooks/.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+*.egg
