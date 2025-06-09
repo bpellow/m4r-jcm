@@ -29,7 +29,7 @@ class ClusterModel:
         # Data
         self.X = X
         self.n, self.d = X.shape
-        self.W = W
+        self.W = csr_matrix(W) if isinstance(W, np.ndarray) else W
         self.K = K
         self.V = W.shape[1]
 
